@@ -1,0 +1,2 @@
+# fragmental
+GraphQL Fragment Resolver
