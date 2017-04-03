@@ -1,6 +1,6 @@
 {
-  "name": "fragmental",
-  "version": "0.1.0",
+  "name": "grapql-fragmental",
+  "version": "0.1.1",
   "description": "GraphQL Fragment Resolver",
   "main": "index.js",
   "scripts": {
