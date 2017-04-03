@@ -1,4 +1,4 @@
-# fragmental
+# graphql-fragmental
 GraphQL Fragment Resolver
 
 Use it to maintain named GraphQL-fragments and resolve them into complex queries. 
@@ -6,7 +6,7 @@ Plays well with lightweight GraphQL-clients like [lokka](https://www.npmjs.com/p
 
 ## Installation
 
-`npm install fragmental`
+`npm install graphql-fragmental`
 
 ## Usage
 
@@ -14,10 +14,10 @@ Example
 
 ```js
 
-const fragmented = require('fragmented');
+const fragmental = require('graphql-fragmental');
 const lokka = require('lokka');
 
-fragmented.registerFragment('MyFragment', `
+fragmental.registerFragment('MyFragment', `
         description
         { 
             url
@@ -27,7 +27,7 @@ fragmented.registerFragment('MyFragment', `
          }
     `);
 
-const query = fragmented.resolveQuery(`query tests { ...MyFragment }`);
+const query = fragmental.resolveQuery(`query tests { ...MyFragment }`);
 
 lokka.query(query).then(response => console.log(response));
 
