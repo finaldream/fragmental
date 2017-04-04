@@ -14,10 +14,10 @@ Example
 
 ```js
 
-const fragmental = require('graphql-fragmental');
+const { registerFragment, resolveQuery } = require('graphql-fragmental');
 const lokka = require('lokka');
 
-fragmental.registerFragment('MyFragment', `
+registerFragment('MyFragment', `
         description
         { 
             url
@@ -27,7 +27,7 @@ fragmental.registerFragment('MyFragment', `
          }
     `);
 
-const query = fragmental.resolveQuery(`query tests { ...MyFragment }`);
+const query = resolveQuery(`query tests { ...MyFragment }`);
 
 lokka.query(query).then(response => console.log(response));
 

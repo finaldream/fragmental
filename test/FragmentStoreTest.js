@@ -8,7 +8,7 @@
 'use strict';
 
 const assert = require('assert');
-const store = require('../index');
+const store = require('../index').store;
 const fixtures = require('./fixtures/FragmentTestMocks');
 
 describe('FragmentStore', function () {

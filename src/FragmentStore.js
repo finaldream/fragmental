@@ -20,6 +20,9 @@ class FragmentStore {
 
         this.fragments = new Map();
 
+        this.registerFragment = this.registerFragment.bind(this);
+        this.resolveQuery = this.resolveQuery.bind(this);
+
     }
 
     /**

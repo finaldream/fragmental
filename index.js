@@ -9,4 +9,8 @@
 
 const FragmentStore = require('./src/FragmentStore');
 
-module.exports = new FragmentStore();
+const store = new FragmentStore();
+
+module.exports.store = store;
+module.exports.registerFragment = store.registerFragment;
+module.exports.resolveQuery = store.resolveQuery;
