@@ -131,7 +131,7 @@ class FragmentStore {
 
         const result = new Map;
 
-        if (typeof name === 'string') {
+        if (typeof names === 'string') {
             names = [names];
         } else if (Array.isArray(names)) {
             names = uniq(names);
